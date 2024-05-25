@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+:root {
+    --tipografia-title: 'Montserrat', sans-serif;
+    --tipografia-title2: 'Sansita Swashed', system-ui;
+    --tipografia-title3: 'Roboto', sans-serif;
+    --tipografia-text: 'Manrope', sans-serif;
+    --primary-color: #07878F;
+}
+*{
+    font-family: var(--tipografia-title);
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    height: 10vh;
+    font-family: var(--tipografia-title);
+    background-color: var(--primary-color);
+    font-size: 8px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+.footer_tittle {
+    font-size: 1.5rem;
+}
+.footer_contenido {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Alinea los items verticalmente */
+}
+
+.footer_menu {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    list-style: none;
+}
+
+.footer_menu li {
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: var(--tipografia-subtitle);
+}
+
+.copy {
+    margin-top: 20px;
+    font-family: var(--tipografia-subtitle);
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 8px;
+        padding-top: 2px;
+        font-size: 8px;
+    }
+
+    .footer_menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_menu li {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .copy {
+        margin-top: 10px;
+        font-size: 5px;
+    }
+}

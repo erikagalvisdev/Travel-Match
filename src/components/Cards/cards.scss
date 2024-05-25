@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #07878f;
+  --secondary-color: #04666d;
+  --third-color: #06afbb;
+  --background-color: #ffffff;
+  --text-color: #ffffff;
+  --form-background-color: #fff;
+  --button-color: #07878f;
+}
+
+.destinoCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-left: 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &__image {
+    width: 100%;
+    height: 200px; /* Ajusta la altura a tu preferencia */
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  &__content {
+    padding: 16px;
+  }
+
+  &__title {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    font-size: 1.2em;
+    color: #666;
+  }
+
+  &__description {
+    margin-top: 12px;
+    font-size: 1em;
+    color: #333;
+  }
+
+  &__actions {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+  }
+
+  &__detailsButton,
+  &__editButton,
+  &__deleteButton {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  &__detailsButton {
+    background-color: var(--button-color);
+    color: #fff;
+  }
+
+  &__editButton {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    margin-right: 10px;
+  }
+
+  &__deleteButton {
+    background-color: var(--third-color);
+    color: #fff;
+  }
+
+  &__detailsButton:hover,
+  &__editButton:hover,
+  &__deleteButton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .destinoCard__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: var(--primary-color);
+}
